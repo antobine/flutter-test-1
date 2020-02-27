@@ -48,7 +48,7 @@ class _HomePageState extends State<HomePage> {
             shape: StadiumBorder(),
             onPressed:() {
               print(_inputPregunta);
-                //Navigator.pushNamed(context, 'respuesta', arguments: _inputPregunta);
+              Navigator.pushNamed(context, 'respuesta', arguments: _inputPregunta.text );
               
             },
           ),

@@ -5,11 +5,14 @@ import 'package:flutter/material.dart';
 class RespuestaPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+
+    final _data = ModalRoute.of(context).settings.arguments;
+
     return Scaffold(
       appBar: AppBar(
         title: Text('Tu respuesta')
       ),
-      body: _RespuestaRandom( pregunta: '¿Comemos?' ),
+      body: _RespuestaRandom( pregunta: _data ),
     );
   }
 }
